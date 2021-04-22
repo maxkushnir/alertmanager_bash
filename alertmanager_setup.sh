@@ -36,7 +36,7 @@ After=network-online.target
 User=root
 Group=root
 Type=simple
-ExecStart=/usr/local/bin/alertmanager --config.file /opt/alertmanager/alertmanager.yml -web.external-url=http://0.0.0.0:9093
+ExecStart=/usr/local/bin/alertmanager --config.file /opt/alertmanager/alertmanager.yml --web.external-url=http://0.0.0.0:9093
 
 
 [Install]
